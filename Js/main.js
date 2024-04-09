@@ -24,28 +24,26 @@ var swiper = new Swiper(".reviews-content", {
 
 // Email JS
 function validate() {
-  let name = document.querySelector(".name");
   let email = document.querySelector(".email");
   let msg = document.querySelector(".message");
   let sendBtn = document.querySelector(".send-btn");
   sendBtn.addEventListener("click", (e) => {
     e.preventDefault();
-    if (name.value == "" || email.value == "" || msg.value == "") {
+    if (email.value == "" || msg.value == "") {
       emptyerror();
     } else {
-      sendmail(name.value, email.value, msg.value);
+      sendmail(email.value, msg.value);
       success();
-      name.value="";
       email.value="";
       msg.value="";
     }
   });
 }
 validate();
-function sendmail(name, email, msg) {
+function sendmail(email, msg) {
   emailjs.send("service_e0bzggv", "template_2y8bbd7", {
-    from_name: name,
-    to_name: Suraj,
+    from_name: email,
+    to_name: "Suraj",
     message: msg,
   });
 }
