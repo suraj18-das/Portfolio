@@ -11,6 +11,87 @@
     <link rel="stylesheet" href="css/swiper-bundle.min.css">
     <!-- Link to Boxicons -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        /* Adding animations */
+        .animated {
+            animation-duration: 1s;
+            animation-fill-mode: both;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideInFromLeft {
+            from {
+                transform: translateX(-100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideInFromRight {
+            from {
+                transform: translateX(100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+        .fadeIn {
+            animation-name: fadeIn;
+        }
+
+        .slideInFromLeft {
+            animation-name: slideInFromLeft;
+        }
+
+        .slideInFromRight {
+            animation-name: slideInFromRight;
+        }
+
+        .navbar li, .home-img img, .home-text, .services-box, .portfolio-box, .review-box {
+            opacity: 0;
+        }
+
+        .navbar li {
+            animation: fadeIn 1s forwards;
+            animation-delay: 0.5s;
+        }
+
+        .home-img img {
+            animation: slideInFromLeft 1s forwards;
+            animation-delay: 0.5s;
+        }
+
+        .home-text {
+            animation: slideInFromRight 1s forwards;
+            animation-delay: 0.5s;
+        }
+
+        .services-box {
+            animation: fadeIn 1s forwards;
+        }
+
+        .portfolio-box {
+            animation: fadeIn 1s forwards;
+        }
+
+        .review-box {
+            animation: fadeIn 1s forwards;
+        }
+    </style>
 </head>
 
 <body>
@@ -25,11 +106,11 @@
             <a href="#" class="logo">Suraj</a>
             <!-- Navbar -->
             <ul class="navbar">
-                <li><a href="#home" class="nav-link">Home</a></li>
-                <li><a href="#about" class="nav-link">About</a></li>
-                <li><a href="#services" class="nav-link">Services</a></li>
-                <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
-                <li><a href="#contact" class="nav-link">Contact</a></li>
+                <li class="animated"><a href="#home" class="nav-link">Home</a></li>
+                <li class="animated"><a href="#about" class="nav-link">About</a></li>
+                <li class="animated"><a href="#services" class="nav-link">Services</a></li>
+                <li class="animated"><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                <li class="animated"><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
             <div class="menu-icon">
                 <div class="line1"></div>
@@ -39,20 +120,19 @@
         </div>
     </header>
     <!-- Home -->
-    <section class="home container"id="home">
+    <section class="home container" id="home">
         <div class="home-content">
-            <div class="home-img">
+            <div class="home-img animated slideInFromLeft">
                 <img src="img/profile.JPG" alt="">
             </div>
 
-            <div class="home-text">
+            <div class="home-text animated slideInFromRight">
                 <h3>Hello</h3>
                 <h2>I'm <span class="color">Suraj</span></h2>
                 <p>
                     I'm <span class="color">CEO</span> of this company with a strong passion for building <span
-                        class="color"> website frontend</span> &<span class="color"> Android </span>with JAVA and
-                    XMl
-                    with user experience.
+                        class="color"> website frontend</span> & <span class="color"> Android </span> with JAVA and
+                    XML with user experience.
                     <br> Here's a bit more <span class="color"> about me.</span>
                 </p>
                 <!-- Social -->
@@ -75,15 +155,15 @@
                     Android Developer & <br> JAVA Developer</h2>
                 <!-- add the CV file -->
                 <a href="#" class="btn" download="">
-                    Download Cv
+                    Download CV
                     <i class='bx bx-download'></i>
                 </a>
             </div>
             <div class="about-text">
-                <p>Hello! I am Suraj Das. Web Developer, Android Developer and Java Developer.</p>
+                <p>Hello! I am Suraj Das. Web Developer, Android Developer, and Java Developer.</p>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium asperiores in perferendis soluta
                     minus nemo.</p>
-                <p>Get your project book with contact button.</p>
+                <p>Get your project book with the contact button.</p>
             </div>
         </div>
     </section>
@@ -93,19 +173,19 @@
         <h2 class="heading">Services</h2>
         <!-- Service content -->
         <div class="services-content">
-            <div class="services-box">
+            <div class="services-box animated fadeIn">
                 <i class='bx bx-code-alt'></i>
                 <h2>Web Development</h2>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil numquam natus accusamus repellendus
                     aliquam non.</p>
             </div>
-            <div class="services-box">
+            <div class="services-box animated fadeIn">
                 <i class='bx bxl-android'></i>
                 <h2>Android Development</h2>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil numquam natus accusamus repellendus
                     aliquam non.</p>
             </div>
-            <div class="services-box">
+            <div class="services-box animated fadeIn">
                 <i class='bx bxl-java'></i>
                 <h2>Java Development</h2>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil numquam natus accusamus repellendus
@@ -119,7 +199,7 @@
         <h2 class="heading">Portfolio</h2>
         <!-- Projects content -->
         <div class="portfolio-content">
-            <div class="portfolio-box">
+            <div class="portfolio-box animated fadeIn">
                 <img src="./img/portfolio-1.webp" alt="" class="portfolio-img">
                 <!-- Overlay -->
                 <div class="portfolio-overlay">
@@ -129,7 +209,7 @@
                     </a>
                 </div>
             </div>
-            <div class="portfolio-box">
+            <div class="portfolio-box animated fadeIn">
                 <img src="./img/portfolio-2.webp" alt="" class="portfolio-img">
                 <!-- Overlay -->
                 <div class="portfolio-overlay">
@@ -139,7 +219,7 @@
                     </a>
                 </div>
             </div>
-            <div class="portfolio-box">
+            <div class="portfolio-box animated fadeIn">
                 <img src="./img/portfolio-3.webp" alt="" class="portfolio-img">
                 <!-- Overlay -->
                 <div class="portfolio-overlay">
@@ -149,7 +229,7 @@
                     </a>
                 </div>
             </div>
-            <div class="portfolio-box">
+            <div class="portfolio-box animated fadeIn">
                 <img src="./img/portfolio-4.webp" alt="" class="portfolio-img">
                 <!-- Overlay -->
                 <div class="portfolio-overlay">
@@ -167,17 +247,17 @@
         <h2 class="heading">Projects</h2>
         <!-- Projects content -->
         <div class="projects-content">
-            <div class="project-box">
+            <div class="project-box animated fadeIn">
                 <h2>0</h2>
                 <span>Projects Completed</span>
             </div>
-            <div class="project-box">
+            <div class="project-box animated fadeIn">
                 <h2>0</h2>
                 <span>Websites Develop</span>
             </div>
-            <div class="project-box">
+            <div class="project-box animated fadeIn">
                 <h2>0</h2>
-                <span>Happy Clinets</span>
+                <span>Happy Clients</span>
             </div>
         </div>
     </section>
@@ -188,7 +268,7 @@
         <!-- Reviews content -->
         <div class="reviews-content swiper">
             <div class="swiper-wrapper">
-                <div class="swiper-slide">
+                <div class="swiper-slide animated fadeIn">
                     <!--Review box  -->
                     <div class="review-box">
                         <i class='bx bxs-quote-right'></i>
@@ -202,7 +282,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="swiper-slide">
+                <div class="swiper-slide animated fadeIn">
                     <!--Review box  -->
                     <div class="review-box">
                         <i class='bx bxs-quote-right'></i>
@@ -216,7 +296,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="swiper-slide">
+                <div class="swiper-slide animated fadeIn">
                     <!--Review box  -->
                     <div class="review-box">
                         <i class='bx bxs-quote-right'></i>
@@ -233,14 +313,13 @@
             </div>
             <div class="swiper-pagination"></div>
         </div>
-        </div>
     </section>
-    <!-- Contact From -->
+    <!-- Contact Form -->
     <section class="contact container" id="contact">
         <h2 class="heading">Contact</h2>
         <!-- Contact form -->
         <form action="" class="contact-form" id="contact-form">
-            <input type="email" name=" " id=" " placeholder=" Email address..." class="email" required>
+            <input type="email" name="" id="" placeholder=" Email address..." class="email" required>
             <textarea name="" id="" cols="30" rows="10" placeholder="Write message here..." class="message"
                 required></textarea>
             <input type="submit" value="Send" class="send-btn">
@@ -264,10 +343,6 @@
         <p>&#169;Carpoolvenom</p>
     </section>
 
-
-
-
-
     <!-- Link to email js -->
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <!-- SweetAlert Js link -->
@@ -278,9 +353,8 @@
         })();
     </script>
     <!-- Link to swiper js -->
-    <script src=" ./Js/swiper-bundle.min.js"></script>
+    <script src="./Js/swiper-bundle.min.js"></script>
     <!-- Link to js -->
     <script src="./Js/main.js"></script>
 </body>
-
 </html>
