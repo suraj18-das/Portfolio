@@ -286,7 +286,7 @@ header {
 }
 .services-box2:hover{
   transform: scale(1.05);
-
+  transition: 0.5s all cubic-bezier (0.075, 0.82, 0.165, 1);
 }
 .services-box2 i,h2,h3{
   margin: 0 auto;
@@ -653,6 +653,9 @@ project-box h2 {
   .services-content,.portfolio-content,.projects-content{
     grid-template-columns: 1fr;
   } 
+  .services-box2{
+    width: 395px;
+  }
   .review-box .review-text{
     font-size: 0.82rem;
   }
