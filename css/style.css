@@ -11,6 +11,7 @@
 /* Variables */
 :root {
   --main-color: #647bff;
+  --mC2:#263691;
   --body-color: #090a1a;
   --container-color: #171b3c;
   --heading-color: #222231;
@@ -269,13 +270,39 @@ header {
   border-radius: 0.4rem;
   transition: 0.5s all cubic-bezier (0.075, 0.82, 0.165, 1);
 }
+.services-box2{
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+  width: 80%;
+  margin: 0 auto;
+  padding: 15px;
+  margin-top: 20px;
+  background: var(--container-color);
+}
 .services-box:hover {
   transform: scale(1.05);
   transition: 0.5s all cubic-bezier (0.075, 0.82, 0.165, 1);
 }
+.services-box2:hover{
+  transform: scale(1.05);
+
+}
+.services-box2 i,h2,h3{
+  margin: 0 auto;
+  color: var(--main-color);
+}
 .services-box .bx {
   font-size: 1.4rem;
   color: var(--main-color);
+  padding: 10px;
+  border-radius: 5rem;
+  border: 2px dashed var(--bg-color);
+}
+.services-box2 .bx {
+  font-size: 1.4rem;
+  color: var(--main-color);
+  align-items: center;
   padding: 10px;
   border-radius: 5rem;
   border: 2px dashed var(--bg-color);
