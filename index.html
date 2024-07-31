@@ -91,10 +91,23 @@
         .review-box {
             animation: fadeIn 1s forwards;
         }
+
+        /* solar system background try */
+        /* Position the solar system container as the background */
+#solar-system-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black; /* Dark blue background */
+  z-index: -1; /* Make sure the solar system is behind the portfolio content */
+}
     </style>
 </head>
 
 <body>
+    <iframe id="solar-system-container" src="./solar-system.html" width="100%" height="100%" frameborder="0"></iframe>
     <!-- Scroll Top -->
     <a href="#home" class="scroll-top">
         <i class='bx bx-up-arrow-alt'></i>
