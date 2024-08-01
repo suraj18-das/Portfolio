@@ -298,10 +298,6 @@ header {
   /* border: 1px solid red; */
 
 }
-/* #number{
-  font-weight: 600;
-  color: #fff;
-} */
 circle{
   fill: none;
   stroke: var(--main-color);
@@ -368,12 +364,19 @@ svg{
   transition: 0.5s all cubic-bezier (0.075, 0.82, 0.165, 1);
 }
 .services-content .services-box:last-child{
-  grid-column: span 3;
+  grid-column: span 1;
   text-align: left;
   align-items: start;
 }
-.services-content .services-box:last-child h2,i,h3{
+.services-box details summary{
+  color: var(--main-color);
+}
+.services-box details summary h3{
+  display: inline;
+}
+.services-box:last-child h3{
   margin: 0 auto;
+  color: var(--main-color);
 }
 .services-box:hover {
   transform: scale(1.05);
@@ -643,9 +646,6 @@ project-box h2 {
   .services-content .services-box:last-child {
     grid-template-columns: repeat(2, 1fr);
   }
-  /* .services-content .services-box:last-child {
-    grid-column: 1;
-  } */
   .project-box {
     height: 245px;
   }
