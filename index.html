@@ -113,6 +113,7 @@
     </style>
   </head>
 
+<<<<<<< Updated upstream
   <body>
     <iframe
       id="solar-system-container"
@@ -230,6 +231,297 @@
       <div class="services-content">
         <div class="services-box animated fadeIn">
           <i class="bx bx-code-alt"></i>
+=======
+    .navbar li {
+      animation: fadeIn 1s forwards;
+      animation-delay: 0.5s;
+    }
+
+    .home-img img {
+      animation: slideInFromLeft 1s forwards;
+      animation-delay: 0.5s;
+    }
+
+    .home-text {
+      animation: slideInFromRight 1s forwards;
+      animation-delay: 0.5s;
+    }
+
+    .services-box {
+      animation: fadeIn 1s forwards;
+    }
+
+    .portfolio-box {
+      animation: fadeIn 1s forwards;
+    }
+
+    .review-box {
+      animation: fadeIn 1s forwards;
+    }
+
+    /* solar system background try */
+    /* Position the solar system container as the background */
+    #solar-system-container {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: black;
+      z-index: -1;
+      /* Make sure the solar system is behind the portfolio content */
+    }
+  </style>
+</head>
+
+<body>
+  <iframe id="solar-system-container" src="./solar-system.html" width="100%" height="100%" frameborder="0"></iframe>
+  <!-- Scroll Top -->
+  <a href="#home" class="scroll-top">
+    <i class="bx bx-up-arrow-alt"></i>
+  </a>
+  <!-- Header -->
+  <header>
+    <div class="nav container">
+      <!-- Logo -->
+      <a href="#" class="logo">Suraj</a>
+      <!-- Navbar -->
+      <ul class="navbar">
+        <li class="animated"><a href="#home" class="nav-link">Home</a></li>
+        <li class="animated"><a href="#about" class="nav-link">About</a></li>
+        <li class="animated">
+          <a href="#services" class="nav-link">Services</a>
+        </li>
+        <li class="animated">
+          <a href="#portfolio" class="nav-link">Portfolio</a>
+        </li>
+        <li class="animated">
+          <a href="#contact" class="nav-link">Contact</a>
+        </li>
+      </ul>
+      <div class="menu-icon">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+    </div>
+  </header>
+  <!-- Home -->
+  <section class="home container" id="home">
+    <div class="home-content">
+      <div class="home-img animated slideInFromLeft">
+        <img src="img/profile.JPG" alt="" />
+      </div>
+
+      <div class="home-text animated slideInFromRight">
+        <h3>Hello</h3>
+        <h2>I'm <span class="color">Suraj</span></h2>
+        <p>
+          I'm <span class="color">CEO</span> of this company with a strong
+          passion for building <span class="color"> website frontend</span> &
+          <span class="color"> Android </span> with JAVA and XML with user
+          experience. <br />
+          Here's a bit more <span class="color"> about me.</span>
+        </p>
+        <!-- Social -->
+        <div class="social">
+          <a href="https://www.facebook.com/profile.php?id=100015746132034" target="_blank"><i
+              class="bx bxl-facebook"></i></a>
+          <a href="https://github.com/suraj18-das" target="_blank"><i class="bx bxl-github"></i></a>
+          <a href="#"><i class="bx bxl-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- About -->
+  <section class="about container" id="about">
+    <h2 class="heading">About</h2>
+    <!-- About content -->
+    <div class="about-content">
+      <div class="about-data">
+        <span>About me</span>
+        <h2>
+          Web Developer, <br />
+          Android Developer & <br />
+          JAVA Developer
+        </h2>
+        <!-- add the CV file -->
+        <a href="#" class="btn" download="">
+          Download CV
+          <i class="bx bx-download"></i>
+        </a>
+      </div>
+      <div class="about-text">
+        <p>
+          Hello! I am Suraj Das. Web Developer, Android Developer, and Java
+          Developer.
+        </p>
+        <p>
+          As a multifaceted developer with a strong foundation in web,
+          Android, and Java development, I bring a unique combination of
+          skills to the table. With a passion for creating innovative
+          solutions that bridge the gap between technology and user
+          experience, I am dedicated to delivering high-quality applications
+          and websites that exceed client expectations. Whether it's building
+          a responsive website, designing a mobile app, or developing a
+          scalable Java application, I am committed to staying at the
+          forefront of technology and leveraging my expertise to drive
+          success.
+        </p>
+        <p>Get your project book with the contact button.</p>
+      </div>
+    </div>
+  </section>
+  <!--Skills  -->
+  <section class="skills container" id="skills">
+    <h2 class="heading">Skills</h2>
+    <div class="skills-box">
+      <div class="skills-content " id="html">
+        <div class="outer">
+          <div class="inner">
+            <div id="number">
+              <!-- 65%  -->
+            </div>
+          </div>
+        </div>
+        <h3>html</h3>
+        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+          <circle id="htmlcircle" cx="80" cy="80" r="70" />
+        </svg>
+      </div>
+      <div class="skills-content " id="css">
+        <div class="outer">
+          <div class="inner">
+            <div id="number"></div>
+          </div>
+        </div>
+        <h3>Css</h3>
+        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+          <circle id="csscircle" cx="80" cy="80" r="70" />
+        </svg>
+      </div>
+      <div class="skills-content " id="js">
+        <div class="outer">
+          <div class="inner">
+            <div id="number"></div>
+          </div>
+        </div>
+        <h3>JavaScript</h3>
+        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+          <circle id="jscircle" cx="80" cy="80" r="70" />
+        </svg>
+      </div>
+      <div class="skills-content " id="java">
+        <div class="outer">
+          <div class="inner">
+            <div id="number"></div>
+          </div>
+        </div>
+        <h3>Java</h3>
+        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+          <circle id="javacircle" cx="80" cy="80" r="70" />
+        </svg>
+      </div>
+    </div>
+    </div>
+  </section>
+  <!-- Services -->
+  <section class="services container" id="services">
+    <!-- Heading -->
+    <h2 class="heading">Services</h2>
+    <!-- Service content -->
+    <div class="services-content">
+      <div class="services-box animated fadeIn">
+        <i class="bx bx-code-alt"></i>
+        <h2>Web Development</h2>
+        <p>
+          As a seasoned web developer, I offer a wide range of services
+          tailored to meet your unique needs. From custom website design and
+          development to e-commerce solutions and content management systems,
+          I have the expertise to help you achieve your online goals. Let me
+          help you take your business to the next level with a professional
+          and engaging website.
+        </p>
+      </div>
+      <div class="services-box animated fadeIn">
+        <i class="bx bxl-android"></i>
+        <h2>Android Development</h2>
+        <p>
+          With a strong background in Android development, I can help you
+          create mobile apps that are both functional and visually appealing.
+          From concept to launch, I'll work with you to design and develop an
+          app that meets your business goals and exceeds your users'
+          expectations.
+        </p>
+      </div>
+      <div class="services-box animated fadeIn">
+        <i class="bx bxl-java"></i>
+        <h2>Java Development</h2>
+        <p>
+          As a skilled Java developer, I can help you build robust and
+          scalable applications that meet your business needs. From desktop
+          applications to web applications, I have the expertise to design and
+          develop Java-based solutions that are efficient, reliable, and
+          secure.
+        </p>
+      </div>
+      <div class="services-box animated fadeIn">
+        <i class="bx bx-up-arrow-alt"></i>
+  
+        <h2>Coding Tutor</h2>
+        <p>
+          As a seasoned developer with expertise in web, Android, and Java
+          development, I offer personalized coding tutoring services to
+          individuals of all skill levels. Whether you're a beginner looking
+          to learn the basics or an experienced developer seeking to improve
+          your skills, I can help you achieve your goals.
+        </p>
+  
+        <h3>What I Offer:</h3>
+        <ul>
+          <li>One-on-one coding sessions tailored to your needs and goals</li>
+          <li>
+            Guidance on best practices, coding standards, and industry trends
+          </li>
+          <li>Hands-on training and exercises to help you learn by doing</li>
+          <li>
+            Feedback and support to help you overcome challenges and improve
+            your skills
+          </li>
+          <li>Flexible scheduling to accommodate your busy schedule</li>
+        </ul>
+  
+        <h3>Benefits:</h3>
+        <ul>
+          <li>Improve your coding skills and confidence</li>
+          <li>
+            Learn from a experienced developer with real-world expertise
+          </li>
+          <li>Get personalized attention and feedback</li>
+          <li>Enhance your career prospects and job opportunities</li>
+          <li>Stay up-to-date with the latest technologies and trends</li>
+        </ul>
+  
+        <h3>Get Started:</h3>
+        <p>
+          If you're interested in improving your coding skills or learning new
+          technologies, I'd love to help. Contact me to schedule a session or
+          discuss your goals and needs.
+        </p>
+      </div>
+    </div>
+  </section>
+  <!-- Portfolio -->
+  <section class="portfolio container" id="portfolio">
+    <!-- Heading -->
+    <h2 class="heading">Portfolio</h2>
+    <!-- Projects content -->
+    <div class="portfolio-content">
+      <div class="portfolio-box animated fadeIn">
+        <img src="./img/portfolio-1.webp" alt="" class="portfolio-img" />
+        <!-- Overlay -->
+        <div class="portfolio-overlay">
+>>>>>>> Stashed changes
           <h2>Web Development</h2>
           <p>
             As a seasoned web developer, I offer a wide range of services

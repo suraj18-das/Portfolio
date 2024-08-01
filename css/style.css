@@ -284,14 +284,6 @@ header {
   transform: scale(1.05);
   transition: 0.5s all cubic-bezier (0.075, 0.82, 0.165, 1);
 }
-.services-box2:hover{
-  transform: scale(1.05);
-  transition: 0.5s all cubic-bezier (0.075, 0.82, 0.165, 1);
-}
-.services-box2 i,h2,h3{
-  margin: 0 auto;
-  color: var(--main-color);
-}
 .services-box .bx {
   font-size: 1.4rem;
   color: var(--main-color);
