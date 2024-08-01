@@ -71,4 +71,29 @@ let scrollTop = document.querySelector (".scroll-top");
 window. addEventListener("scroll", () =>{
   scrollTop.classList. toggle ("scroll-active", window. scrollY >= 400);
 });
+let skills = document.querySelectorAll('.skills-content');
 
+skills.forEach(skill => {
+  let number = skill.querySelector('#number');
+  let counter = 0;
+  let maxPercentage = 0;
+
+  if (skill.id === 'html') {
+    maxPercentage = 100;
+  } else if (skill.id === 'css') {
+    maxPercentage = 80;
+  } else if (skill.id === 'js') {
+    maxPercentage = 70;
+  }else if(skill.id==='java'){
+    maxPercentage=65;
+  }
+
+  setInterval(() => {
+    if (counter >= maxPercentage) {
+      clearInterval();
+    } else {
+      counter += 1;
+      number.innerHTML = counter + "%";
+    }
+  }, 30);
+});
