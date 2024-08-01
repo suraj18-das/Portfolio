@@ -1,512 +1,539 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Suraj</title>
-    <!-- Link to CSS -->
-    <link rel="stylesheet" href="./css/style.css" />
-    <!-- Link to swiper css -->
-    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
-    <!-- Link to Boxicons -->
-    <link
-      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
-      rel="stylesheet"
-    />
-    <style>
-      /* Adding animations */
-      .animated {
-        animation-duration: 1s;
-        animation-fill-mode: both;
-      }
 
-      @keyframes fadeIn {
-        from {
-          opacity: 0;
-        }
-        to {
-          opacity: 1;
-        }
-      }
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Suraj</title>
+  <!-- Link to CSS -->
+  <link rel="stylesheet" href="./css/style.css" />
+  <!-- Link to swiper css -->
+  <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+  <!-- Link to Boxicons -->
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  <style>
+    /* Adding animations */
+    .animated {
+      animation-duration: 1s;
+      animation-fill-mode: both;
+    }
 
-      @keyframes slideInFromLeft {
-        from {
-          transform: translateX(-100%);
-          opacity: 0;
-        }
-        to {
-          transform: translateX(0);
-          opacity: 1;
-        }
-      }
-
-      @keyframes slideInFromRight {
-        from {
-          transform: translateX(100%);
-          opacity: 0;
-        }
-        to {
-          transform: translateX(0);
-          opacity: 1;
-        }
-      }
-
-      .fadeIn {
-        animation-name: fadeIn;
-      }
-
-      .slideInFromLeft {
-        animation-name: slideInFromLeft;
-      }
-
-      .slideInFromRight {
-        animation-name: slideInFromRight;
-      }
-
-      .navbar li,
-      .home-img img,
-      .home-text,
-      .services-box,
-      .portfolio-box,
-      .review-box {
+    @keyframes fadeIn {
+      from {
         opacity: 0;
       }
 
-      .navbar li {
-        animation: fadeIn 1s forwards;
-        animation-delay: 0.5s;
+      to {
+        opacity: 1;
+      }
+    }
+
+    @keyframes slideInFromLeft {
+      from {
+        transform: translateX(-100%);
+        opacity: 0;
       }
 
-      .home-img img {
-        animation: slideInFromLeft 1s forwards;
-        animation-delay: 0.5s;
+      to {
+        transform: translateX(0);
+        opacity: 1;
+      }
+    }
+
+    @keyframes slideInFromRight {
+      from {
+        transform: translateX(100%);
+        opacity: 0;
       }
 
-      .home-text {
-        animation: slideInFromRight 1s forwards;
-        animation-delay: 0.5s;
+      to {
+        transform: translateX(0);
+        opacity: 1;
       }
+    }
 
-      .services-box {
-        animation: fadeIn 1s forwards;
-      }
+    .fadeIn {
+      animation-name: fadeIn;
+    }
 
-      .portfolio-box {
-        animation: fadeIn 1s forwards;
-      }
+    .slideInFromLeft {
+      animation-name: slideInFromLeft;
+    }
 
-      .review-box {
-        animation: fadeIn 1s forwards;
-      }
+    .slideInFromRight {
+      animation-name: slideInFromRight;
+    }
 
-      /* solar system background try */
-      /* Position the solar system container as the background */
-      #solar-system-container {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: black;
-        z-index: -1; /* Make sure the solar system is behind the portfolio content */
-      }
-    </style>
-  </head>
+    .navbar li,
+    .home-img img,
+    .home-text,
+    .services-box,
+    .portfolio-box,
+    .review-box {
+      opacity: 0;
+    }
 
-  <body>
-    <iframe
-      id="solar-system-container"
-      src="./solar-system.html"
-      width="100%"
-      height="100%"
-      frameborder="0"
-    ></iframe>
-    <!-- Scroll Top -->
-    <a href="#home" class="scroll-top">
-      <i class="bx bx-up-arrow-alt"></i>
-    </a>
-    <!-- Header -->
-    <header>
-      <div class="nav container">
-        <!-- Logo -->
-        <a href="#" class="logo">Suraj</a>
-        <!-- Navbar -->
-        <ul class="navbar">
-          <li class="animated"><a href="#home" class="nav-link">Home</a></li>
-          <li class="animated"><a href="#about" class="nav-link">About</a></li>
-          <li class="animated">
-            <a href="#services" class="nav-link">Services</a>
-          </li>
-          <li class="animated">
-            <a href="#portfolio" class="nav-link">Portfolio</a>
-          </li>
-          <li class="animated">
-            <a href="#contact" class="nav-link">Contact</a>
-          </li>
-        </ul>
-        <div class="menu-icon">
-          <div class="line1"></div>
-          <div class="line2"></div>
-          <div class="line3"></div>
+    .navbar li {
+      animation: fadeIn 1s forwards;
+      animation-delay: 0.5s;
+    }
+
+    .home-img img {
+      animation: slideInFromLeft 1s forwards;
+      animation-delay: 0.5s;
+    }
+
+    .home-text {
+      animation: slideInFromRight 1s forwards;
+      animation-delay: 0.5s;
+    }
+
+    .services-box {
+      animation: fadeIn 1s forwards;
+    }
+
+    .portfolio-box {
+      animation: fadeIn 1s forwards;
+    }
+
+    .review-box {
+      animation: fadeIn 1s forwards;
+    }
+
+    /* solar system background try */
+    /* Position the solar system container as the background */
+    #solar-system-container {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: black;
+      z-index: -1;
+      /* Make sure the solar system is behind the portfolio content */
+    }
+  </style>
+</head>
+
+<body>
+  <iframe id="solar-system-container" src="./solar-system.html" width="100%" height="100%" frameborder="0"></iframe>
+  <!-- Scroll Top -->
+  <a href="#home" class="scroll-top">
+    <i class="bx bx-up-arrow-alt"></i>
+  </a>
+  <!-- Header -->
+  <header>
+    <div class="nav container">
+      <!-- Logo -->
+      <a href="#" class="logo">Suraj</a>
+      <!-- Navbar -->
+      <ul class="navbar">
+        <li class="animated"><a href="#home" class="nav-link">Home</a></li>
+        <li class="animated"><a href="#about" class="nav-link">About</a></li>
+        <li class="animated">
+          <a href="#services" class="nav-link">Services</a>
+        </li>
+        <li class="animated">
+          <a href="#portfolio" class="nav-link">Portfolio</a>
+        </li>
+        <li class="animated">
+          <a href="#contact" class="nav-link">Contact</a>
+        </li>
+      </ul>
+      <div class="menu-icon">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+    </div>
+  </header>
+  <!-- Home -->
+  <section class="home container" id="home">
+    <div class="home-content">
+      <div class="home-img animated slideInFromLeft">
+        <img src="img/profile.JPG" alt="" />
+      </div>
+
+      <div class="home-text animated slideInFromRight">
+        <h3>Hello</h3>
+        <h2>I'm <span class="color">Suraj</span></h2>
+        <p>
+          I'm <span class="color">CEO</span> of this company with a strong
+          passion for building <span class="color"> website frontend</span> &
+          <span class="color"> Android </span> with JAVA and XML with user
+          experience. <br />
+          Here's a bit more <span class="color"> about me.</span>
+        </p>
+        <!-- Social -->
+        <div class="social">
+          <a href="https://www.facebook.com/profile.php?id=100015746132034" target="_blank"><i
+              class="bx bxl-facebook"></i></a>
+          <a href="https://github.com/suraj18-das" target="_blank"><i class="bx bxl-github"></i></a>
+          <a href="#"><i class="bx bxl-instagram"></i></a>
         </div>
       </div>
-    </header>
-    <!-- Home -->
-    <section class="home container" id="home">
-      <div class="home-content">
-        <div class="home-img animated slideInFromLeft">
-          <img src="img/profile.JPG" alt="" />
-        </div>
-
-        <div class="home-text animated slideInFromRight">
-          <h3>Hello</h3>
-          <h2>I'm <span class="color">Suraj</span></h2>
-          <p>
-            I'm <span class="color">CEO</span> of this company with a strong
-            passion for building <span class="color"> website frontend</span> &
-            <span class="color"> Android </span> with JAVA and XML with user
-            experience. <br />
-            Here's a bit more <span class="color"> about me.</span>
-          </p>
-          <!-- Social -->
-          <div class="social">
-            <a
-              href="https://www.facebook.com/profile.php?id=100015746132034"
-              target="_blank"
-              ><i class="bx bxl-facebook"></i
-            ></a>
-            <a href="https://github.com/suraj18-das" target="_blank"
-              ><i class="bx bxl-github"></i
-            ></a>
-            <a href="#"><i class="bx bxl-instagram"></i></a>
+    </div>
+  </section>
+  <!-- About -->
+  <section class="about container" id="about">
+    <h2 class="heading">About</h2>
+    <!-- About content -->
+    <div class="about-content">
+      <div class="about-data">
+        <span>About me</span>
+        <h2>
+          Web Developer, <br />
+          Android Developer & <br />
+          JAVA Developer
+        </h2>
+        <!-- add the CV file -->
+        <a href="#" class="btn" download="">
+          Download CV
+          <i class="bx bx-download"></i>
+        </a>
+      </div>
+      <div class="about-text">
+        <p>
+          Hello! I am Suraj Das. Web Developer, Android Developer, and Java
+          Developer.
+        </p>
+        <p>
+          As a multifaceted developer with a strong foundation in web,
+          Android, and Java development, I bring a unique combination of
+          skills to the table. With a passion for creating innovative
+          solutions that bridge the gap between technology and user
+          experience, I am dedicated to delivering high-quality applications
+          and websites that exceed client expectations. Whether it's building
+          a responsive website, designing a mobile app, or developing a
+          scalable Java application, I am committed to staying at the
+          forefront of technology and leveraging my expertise to drive
+          success.
+        </p>
+        <p>Get your project book with the contact button.</p>
+      </div>
+    </div>
+  </section>
+  <!--Skills  -->
+  <section class="skills container" id="skills">
+    <h2 class="heading">Skills</h2>
+    <div class="skills-box">
+      <div class="skills-content " id="html">
+        <div class="outer">
+          <div class="inner">
+            <div id="number">
+              <!-- 65%  -->
+            </div>
           </div>
         </div>
+        <h3>html</h3>
+        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+          <circle id="htmlcircle" cx="80" cy="80" r="70" />
+        </svg>
       </div>
-    </section>
-    <!-- About -->
-    <section class="about container" id="about">
-      <h2 class="heading">About</h2>
-      <!-- About content -->
-      <div class="about-content">
-        <div class="about-data">
-          <span>About me</span>
-          <h2>
-            Web Developer, <br />
-            Android Developer & <br />
-            JAVA Developer
-          </h2>
-          <!-- add the CV file -->
-          <a href="#" class="btn" download="">
-            Download CV
-            <i class="bx bx-download"></i>
+      <div class="skills-content " id="css">
+        <div class="outer">
+          <div class="inner">
+            <div id="number"></div>
+          </div>
+        </div>
+        <h3>Css</h3>
+        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+          <circle id="csscircle" cx="80" cy="80" r="70" />
+        </svg>
+      </div>
+      <div class="skills-content " id="js">
+        <div class="outer">
+          <div class="inner">
+            <div id="number"></div>
+          </div>
+        </div>
+        <h3>JavaScript</h3>
+        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+          <circle id="jscircle" cx="80" cy="80" r="70" />
+        </svg>
+      </div>
+      <div class="skills-content " id="java">
+        <div class="outer">
+          <div class="inner">
+            <div id="number"></div>
+          </div>
+        </div>
+        <h3>Java</h3>
+        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+          <circle id="javacircle" cx="80" cy="80" r="70" />
+        </svg>
+      </div>
+    </div>
+    </div>
+  </section>
+  <!-- Services -->
+  <section class="services container" id="services">
+    <!-- Heading -->
+    <h2 class="heading">Services</h2>
+    <!-- Service content -->
+    <div class="services-content">
+      <div class="services-box animated fadeIn">
+        <i class="bx bx-code-alt"></i>
+        <h2>Web Development</h2>
+        <p>
+          As a seasoned web developer, I offer a wide range of services
+          tailored to meet your unique needs. From custom website design and
+          development to e-commerce solutions and content management systems,
+          I have the expertise to help you achieve your online goals. Let me
+          help you take your business to the next level with a professional
+          and engaging website.
+        </p>
+      </div>
+      <div class="services-box animated fadeIn">
+        <i class="bx bxl-android"></i>
+        <h2>Android Development</h2>
+        <p>
+          With a strong background in Android development, I can help you
+          create mobile apps that are both functional and visually appealing.
+          From concept to launch, I'll work with you to design and develop an
+          app that meets your business goals and exceeds your users'
+          expectations.
+        </p>
+      </div>
+      <div class="services-box animated fadeIn">
+        <i class="bx bxl-java"></i>
+        <h2>Java Development</h2>
+        <p>
+          As a skilled Java developer, I can help you build robust and
+          scalable applications that meet your business needs. From desktop
+          applications to web applications, I have the expertise to design and
+          develop Java-based solutions that are efficient, reliable, and
+          secure.
+        </p>
+      </div>
+    </div>
+
+    <div class="services-box2">
+      <i class="bx bx-up-arrow-alt"></i>
+
+      <h2>Coding Tutor</h2>
+      <p>
+        As a seasoned developer with expertise in web, Android, and Java
+        development, I offer personalized coding tutoring services to
+        individuals of all skill levels. Whether you're a beginner looking
+        to learn the basics or an experienced developer seeking to improve
+        your skills, I can help you achieve your goals.
+      </p>
+
+      <h3>What I Offer:</h3>
+      <ul>
+        <li>One-on-one coding sessions tailored to your needs and goals</li>
+        <li>
+          Guidance on best practices, coding standards, and industry trends
+        </li>
+        <li>Hands-on training and exercises to help you learn by doing</li>
+        <li>
+          Feedback and support to help you overcome challenges and improve
+          your skills
+        </li>
+        <li>Flexible scheduling to accommodate your busy schedule</li>
+      </ul>
+
+      <h3>Benefits:</h3>
+      <ul>
+        <li>Improve your coding skills and confidence</li>
+        <li>
+          Learn from a experienced developer with real-world expertise
+        </li>
+        <li>Get personalized attention and feedback</li>
+        <li>Enhance your career prospects and job opportunities</li>
+        <li>Stay up-to-date with the latest technologies and trends</li>
+      </ul>
+
+      <h3>Get Started:</h3>
+      <p>
+        If you're interested in improving your coding skills or learning new
+        technologies, I'd love to help. Contact me to schedule a session or
+        discuss your goals and needs.
+      </p>
+    </div>
+  </section>
+  <!-- Portfolio -->
+  <section class="portfolio container" id="portfolio">
+    <!-- Heading -->
+    <h2 class="heading">Portfolio</h2>
+    <!-- Projects content -->
+    <div class="portfolio-content">
+      <div class="portfolio-box animated fadeIn">
+        <img src="./img/portfolio-1.webp" alt="" class="portfolio-img" />
+        <!-- Overlay -->
+        <div class="portfolio-overlay">
+          <h2>Web Development</h2>
+          <a href="#">
+            <i class="bx bx-link-alt"></i>
           </a>
         </div>
-        <div class="about-text">
-          <p>
-            Hello! I am Suraj Das. Web Developer, Android Developer, and Java
-            Developer.
-          </p>
-          <p>
-            As a multifaceted developer with a strong foundation in web,
-            Android, and Java development, I bring a unique combination of
-            skills to the table. With a passion for creating innovative
-            solutions that bridge the gap between technology and user
-            experience, I am dedicated to delivering high-quality applications
-            and websites that exceed client expectations. Whether it's building
-            a responsive website, designing a mobile app, or developing a
-            scalable Java application, I am committed to staying at the
-            forefront of technology and leveraging my expertise to drive
-            success.
-          </p>
-          <p>Get your project book with the contact button.</p>
-        </div>
       </div>
-    </section>
-    <!-- Services -->
-    <section class="services container" id="services">
-      <!-- Heading -->
-      <h2 class="heading">Services</h2>
-      <!-- Service content -->
-      <div class="services-content">
-        <div class="services-box animated fadeIn">
-          <i class="bx bx-code-alt"></i>
-          <h2>Web Development</h2>
-          <p>
-            As a seasoned web developer, I offer a wide range of services
-            tailored to meet your unique needs. From custom website design and
-            development to e-commerce solutions and content management systems,
-            I have the expertise to help you achieve your online goals. Let me
-            help you take your business to the next level with a professional
-            and engaging website.
-          </p>
-        </div>
-        <div class="services-box animated fadeIn">
-          <i class="bx bxl-android"></i>
+      <div class="portfolio-box animated fadeIn">
+        <img src="./img/portfolio-2.webp" alt="" class="portfolio-img" />
+        <!-- Overlay -->
+        <div class="portfolio-overlay">
           <h2>Android Development</h2>
-          <p>
-            With a strong background in Android development, I can help you
-            create mobile apps that are both functional and visually appealing.
-            From concept to launch, I'll work with you to design and develop an
-            app that meets your business goals and exceeds your users'
-            expectations.
-          </p>
+          <a href="#">
+            <i class="bx bx-link-alt"></i>
+          </a>
         </div>
-        <div class="services-box animated fadeIn">
-          <i class="bx bxl-java"></i>
+      </div>
+      <div class="portfolio-box animated fadeIn">
+        <img src="./img/portfolio-3.webp" alt="" class="portfolio-img" />
+        <!-- Overlay -->
+        <div class="portfolio-overlay">
           <h2>Java Development</h2>
-          <p>
-            As a skilled Java developer, I can help you build robust and
-            scalable applications that meet your business needs. From desktop
-            applications to web applications, I have the expertise to design and
-            develop Java-based solutions that are efficient, reliable, and
-            secure.
-          </p>
+          <a href="#">
+            <i class="bx bx-link-alt"></i>
+          </a>
         </div>
       </div>
-      <div class="services-box2">
-        <i class="bx bx-up-arrow-alt"></i>
-
-        <h2>Coding Tutor</h2>
-        <p>
-          As a seasoned developer with expertise in web, Android, and Java
-          development, I offer personalized coding tutoring services to
-          individuals of all skill levels. Whether you're a beginner looking
-          to learn the basics or an experienced developer seeking to improve
-          your skills, I can help you achieve your goals.
-        </p>
-
-        <h3>What I Offer:</h3>
-        <ul>
-          <li>One-on-one coding sessions tailored to your needs and goals</li>
-          <li>
-            Guidance on best practices, coding standards, and industry trends
-          </li>
-          <li>Hands-on training and exercises to help you learn by doing</li>
-          <li>
-            Feedback and support to help you overcome challenges and improve
-            your skills
-          </li>
-          <li>Flexible scheduling to accommodate your busy schedule</li>
-        </ul>
-
-        <h3>Benefits:</h3>
-        <ul>
-          <li>Improve your coding skills and confidence</li>
-          <li>
-            Learn from a experienced developer with real-world expertise
-          </li>
-          <li>Get personalized attention and feedback</li>
-          <li>Enhance your career prospects and job opportunities</li>
-          <li>Stay up-to-date with the latest technologies and trends</li>
-        </ul>
-
-        <h3>Get Started:</h3>
-        <p>
-          If you're interested in improving your coding skills or learning new
-          technologies, I'd love to help. Contact me to schedule a session or
-          discuss your goals and needs.
-        </p>
-      </div>
-    </section>
-    <!-- Portfolio -->
-    <section class="portfolio container" id="portfolio">
-      <!-- Heading -->
-      <h2 class="heading">Portfolio</h2>
-      <!-- Projects content -->
-      <div class="portfolio-content">
-        <div class="portfolio-box animated fadeIn">
-          <img src="./img/portfolio-1.webp" alt="" class="portfolio-img" />
-          <!-- Overlay -->
-          <div class="portfolio-overlay">
-            <h2>Web Development</h2>
-            <a href="#">
-              <i class="bx bx-link-alt"></i>
-            </a>
-          </div>
-        </div>
-        <div class="portfolio-box animated fadeIn">
-          <img src="./img/portfolio-2.webp" alt="" class="portfolio-img" />
-          <!-- Overlay -->
-          <div class="portfolio-overlay">
-            <h2>Android Development</h2>
-            <a href="#">
-              <i class="bx bx-link-alt"></i>
-            </a>
-          </div>
-        </div>
-        <div class="portfolio-box animated fadeIn">
-          <img src="./img/portfolio-3.webp" alt="" class="portfolio-img" />
-          <!-- Overlay -->
-          <div class="portfolio-overlay">
-            <h2>Java Development</h2>
-            <a href="#">
-              <i class="bx bx-link-alt"></i>
-            </a>
-          </div>
-        </div>
-        <div class="portfolio-box animated fadeIn">
-          <img src="./img/portfolio-4.webp" alt="" class="portfolio-img" />
-          <!-- Overlay -->
-          <div class="portfolio-overlay">
-            <h2>Others</h2>
-            <a href="#">
-              <i class="bx bx-link-alt"></i>
-            </a>
-          </div>
+      <div class="portfolio-box animated fadeIn">
+        <img src="./img/portfolio-4.webp" alt="" class="portfolio-img" />
+        <!-- Overlay -->
+        <div class="portfolio-overlay">
+          <h2>Others</h2>
+          <a href="#">
+            <i class="bx bx-link-alt"></i>
+          </a>
         </div>
       </div>
-    </section>
-    <!-- projects -->
-    <section class="projects container" id="projects">
-      <!-- Heading -->
-      <h2 class="heading">Projects</h2>
-      <!-- Projects content -->
-      <div class="projects-content">
-        <div class="project-box animated fadeIn">
-          <h2>15</h2>
-          <span>Projects Completed</span>
-        </div>
-        <div class="project-box animated fadeIn">
-          <h2>1</h2>
-          <span>Websites Developed</span>
-        </div>
-        <div class="project-box animated fadeIn">
-          <h2>20</h2>
-          <span>Happy Clients</span>
-        </div>
-        <div class="project-box animated fadeIn">
-            <h2>10</h2>
-            <span>Teach Students</span>
-          </div>
-          <div class="project-box animated fadeIn">
-            <h2>5</h2>
-            <span>Android Apps Developed</span>
-          </div>
-          <div class="project-box animated fadeIn">
-            <h2>20</h2>
-            <span>Java Code Developed</span>
-          </div>
+    </div>
+  </section>
+  <!-- projects -->
+  <section class="projects container" id="projects">
+    <!-- Heading -->
+    <h2 class="heading">Projects</h2>
+    <!-- Projects content -->
+    <div class="projects-content">
+      <div class="project-box animated fadeIn">
+        <h2>15</h2>
+        <span>Projects Completed</span>
       </div>
-    </section>
-    <!-- Reviews -->
-    <section class="container reviews" id="reviews">
-      <!-- Heading -->
-      <h2 class="heading">Reviews</h2>
-      <!-- Reviews content -->
-      <div class="reviews-content swiper">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide animated fadeIn">
-            <!--Review box  -->
-            <div class="review-box">
-              <i class="bx bxs-quote-right"></i>
-              <p class="review-text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Laboriosam, suscipit eaque facere rerum eos nisi ad quo voluptas
-                totam tenetur incidunt magnam? Dolores, animi illum?
-              </p>
-              <div class="review-profile">
-                <h2>Audrey Bella</h2>
-                <span>From Finland</span>
-                <img src="img/review-1.jpg" alt="" />
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide animated fadeIn">
-            <!--Review box  -->
-            <div class="review-box">
-              <i class="bx bxs-quote-right"></i>
-              <p class="review-text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Laboriosam, suscipit eaque facere rerum eos nisi ad quo voluptas
-                totam tenetur incidunt magnam? Dolores, animi illum?
-              </p>
-              <div class="review-profile">
-                <h2>Jhon Mark</h2>
-                <span>From UK</span>
-                <img src="img/review-2.jpg" alt="" />
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide animated fadeIn">
-            <!--Review box  -->
-            <div class="review-box">
-              <i class="bx bxs-quote-right"></i>
-              <p class="review-text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Laboriosam, suscipit eaque facere rerum eos nisi ad quo voluptas
-                totam tenetur incidunt magnam? Dolores, animi illum?
-              </p>
-              <div class="review-profile">
-                <h2>Alexa</h2>
-                <span>From USA</span>
-                <img src="img/review-1.jpg" alt="" />
-              </div>
+      <div class="project-box animated fadeIn">
+        <h2>1</h2>
+        <span>Websites Developed</span>
+      </div>
+      <div class="project-box animated fadeIn">
+        <h2>20</h2>
+        <span>Happy Clients</span>
+      </div>
+      <div class="project-box animated fadeIn">
+        <h2>10</h2>
+        <span>Teach Students</span>
+      </div>
+      <div class="project-box animated fadeIn">
+        <h2>5</h2>
+        <span>Android Apps Developed</span>
+      </div>
+      <div class="project-box animated fadeIn">
+        <h2>20</h2>
+        <span>Java Code Developed</span>
+      </div>
+    </div>
+  </section>
+  <!-- Reviews -->
+  <section class="container reviews" id="reviews">
+    <!-- Heading -->
+    <h2 class="heading">Reviews</h2>
+    <!-- Reviews content -->
+    <div class="reviews-content swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide animated fadeIn">
+          <!--Review box  -->
+          <div class="review-box">
+            <i class="bx bxs-quote-right"></i>
+            <p class="review-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Laboriosam, suscipit eaque facere rerum eos nisi ad quo voluptas
+              totam tenetur incidunt magnam? Dolores, animi illum?
+            </p>
+            <div class="review-profile">
+              <h2>Audrey Bella</h2>
+              <span>From Finland</span>
+              <img src="img/review-1.jpg" alt="" />
             </div>
           </div>
         </div>
-        <div class="swiper-pagination"></div>
+        <div class="swiper-slide animated fadeIn">
+          <!--Review box  -->
+          <div class="review-box">
+            <i class="bx bxs-quote-right"></i>
+            <p class="review-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Laboriosam, suscipit eaque facere rerum eos nisi ad quo voluptas
+              totam tenetur incidunt magnam? Dolores, animi illum?
+            </p>
+            <div class="review-profile">
+              <h2>Jhon Mark</h2>
+              <span>From UK</span>
+              <img src="img/review-2.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide animated fadeIn">
+          <!--Review box  -->
+          <div class="review-box">
+            <i class="bx bxs-quote-right"></i>
+            <p class="review-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Laboriosam, suscipit eaque facere rerum eos nisi ad quo voluptas
+              totam tenetur incidunt magnam? Dolores, animi illum?
+            </p>
+            <div class="review-profile">
+              <h2>Alexa</h2>
+              <span>From USA</span>
+              <img src="img/review-1.jpg" alt="" />
+            </div>
+          </div>
+        </div>
       </div>
-    </section>
-    <!-- Contact Form -->
-    <section class="contact container" id="contact">
-      <h2 class="heading">Contact</h2>
-      <!-- Contact form -->
-      <form action="" class="contact-form" id="contact-form">
-        <input
-          type="email"
-          name=""
-          id=""
-          placeholder=" Email address..."
-          class="email"
-          required
-        />
-        <textarea
-          name=""
-          id=""
-          cols="30"
-          rows="10"
-          placeholder="Write message here..."
-          class="message"
-          required
-        ></textarea>
-        <input type="submit" value="Send" class="send-btn" />
-      </form>
-    </section>
-    <!-- Footer Section -->
-    <section class="footer container" id="footer">
-      <div class="social">
-        <a href="#"><i class="bx bxs-envelope"></i></a>
-        <a href="#"><i class="bx bxl-facebook"></i></a>
-        <a href="https://github.com/suraj18-das" target="_blank"
-          ><i class="bx bxl-github"></i
-        ></a>
-        <a href="#"><i class="bx bxl-instagram"></i></a>
-      </div>
-      <!-- Footer Links -->
-      <div class="footer-links">
-        <a href="#">Privacy Policy</a>
-        <a href="#">Terms Of Use</a>
-        <a href="#">Disclaimer</a>
-      </div>
-      <!-- Copyright -->
-      <p>&#169;Carpoolvenom</p>
-    </section>
+      <div class="swiper-pagination"></div>
+    </div>
+  </section>
+  <!-- Contact Form -->
+  <section class="contact container" id="contact">
+    <h2 class="heading">Contact</h2>
+    <!-- Contact form -->
+    <form action="" class="contact-form" id="contact-form">
+      <input type="email" name="" id="" placeholder=" Email address..." class="email" required />
+      <textarea name="" id="" cols="30" rows="10" placeholder="Write message here..." class="message"
+        required></textarea>
+      <input type="submit" value="Send" class="send-btn" />
+    </form>
+  </section>
+  <!-- Footer Section -->
+  <section class="footer container" id="footer">
+    <div class="social">
+      <a href="#"><i class="bx bxs-envelope"></i></a>
+      <a href="#"><i class="bx bxl-facebook"></i></a>
+      <a href="https://github.com/suraj18-das" target="_blank"><i class="bx bxl-github"></i></a>
+      <a href="#"><i class="bx bxl-instagram"></i></a>
+    </div>
+    <!-- Footer Links -->
+    <div class="footer-links">
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms Of Use</a>
+      <a href="#">Disclaimer</a>
+    </div>
+    <!-- Copyright -->
+    <p>&#169;Carpoolvenom</p>
+  </section>
 
-    <!-- Link to email js -->
-    <script
-      type="text/javascript"
-      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
-    ></script>
-    <!-- SweetAlert Js link -->
-    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-    <script type="text/javascript">
-      (function () {
-        emailjs.init("c6FOmGTdfYnxMf7Vq");
-      })();
-    </script>
-    <!-- Link to swiper js -->
-    <script src="./Js/swiper-bundle.min.js"></script>
-    <!-- Link to js -->
-    <script src="./Js/main.js"></script>
-  </body>
+  <!-- Link to email js -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <!-- SweetAlert Js link -->
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <script type="text/javascript">
+    (function () {
+      emailjs.init("c6FOmGTdfYnxMf7Vq");
+    })();
+  </script>
+  <!-- Link to swiper js -->
+  <script src="./Js/swiper-bundle.min.js"></script>
+  <!-- Link to js -->
+  <script src="./Js/main.js"></script>
+</body>
+
 </html>

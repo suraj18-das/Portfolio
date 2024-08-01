@@ -4,7 +4,7 @@ menu.onclick = () => {
   navbar.classList.toggle("open-menu");
   menu.classList.toggle("move");
 }
-window.onscroll=()=>{
+window.onscroll = () => {
   navbar.classList.remove("open-menu");
   menu.classList.remove("move");
 }
@@ -34,8 +34,8 @@ function validate() {
     } else {
       sendmail(email.value, msg.value);
       success();
-      email.value="";
-      msg.value="";
+      email.value = "";
+      msg.value = "";
     }
   });
 }
@@ -62,13 +62,57 @@ function success() {
   });
 }
 // Header Background Change On Scroll
-let header = document.querySelector ("header");
-window. addEventListener ("scroll", () =>{
-header.classList.toggle ("header-active",window. scrollY > 0);
+let header = document.querySelector("header");
+window.addEventListener("scroll", () => {
+  header.classList.toggle("header-active", window.scrollY > 0);
 });
 // Scroll Top
-let scrollTop = document.querySelector (".scroll-top");
-window. addEventListener("scroll", () =>{
-  scrollTop.classList. toggle ("scroll-active", window. scrollY >= 400);
+let scrollTop = document.querySelector(".scroll-top");
+window.addEventListener("scroll", () => {
+  scrollTop.classList.toggle("scroll-active", window.scrollY >= 400);
 });
+// this below is for one circle animation
+
+// let number=document.getElementById("html");
+// let counter=0;
+// setInterval(()=>{
+//     if(counter==65){
+//         clearInterval(counter);
+//     }
+//     else{
+//         counter+=1;
+//         number.innerHTML=counter+"%";
+//     }
+
+// },30)
+
+// this below is for multiple circle animation
+let skills = document.querySelectorAll('.skills-content');
+let circle = document.querySelector('circle');
+skills.forEach(skill => {
+  let number = skill.querySelector('#number');
+  let counter = 0;
+  let maxPercentage = 0;
+
+  if (skill.id === 'html') {
+    maxPercentage = 100;
+  } else if (skill.id === 'css') {
+    maxPercentage = 80;
+  } else if (skill.id === 'js') {
+    maxPercentage = 70;
+  }else if(skill.id==='java'){
+    maxPercentage=65;
+  }
+
+  setInterval(() => {
+    if (counter >= maxPercentage) {
+      clearInterval();
+    } else {
+      counter += 1;
+      number.innerHTML = counter + "%";
+    }
+  }, 30);
+});
+
+
 
