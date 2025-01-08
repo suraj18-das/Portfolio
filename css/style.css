@@ -183,7 +183,8 @@ header {
   line-height: 4.8rem;
 }
 .home-text p {
-  font-size: 0.938rem;
+  font-size: 0.99rem;
+  font-weight: bold;
   margin-bottom: 1.5rem;
 }
 .home-text .color {
@@ -377,10 +378,14 @@ svg{
 }
 .services-box details summary h3{
   display: inline;
+  cursor: pointer;
 }
-.services-box:last-child h3{
+.services-box:last-child h2,i{
   margin: 0 auto;
   color: var(--main-color);
+}
+.services-box:last-child p{
+  text-align: center;
 }
 .services-box:hover {
   transform: scale(1.05);
