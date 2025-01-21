@@ -86,6 +86,8 @@ skills.forEach(skill => {
     maxPercentage = 70;
   }else if(skill.id==='java'){
     maxPercentage=65;
+  }else if(skill.id==='react'){
+    maxPercentage=60;
   }
 
   setInterval(() => {

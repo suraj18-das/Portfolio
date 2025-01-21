@@ -323,6 +323,9 @@ circle{
 #javacircle{
   animation: javaanim 2s linear forwards;
 }
+#reactcircle{
+  animation: ractanim 2s linear forwards;
+}
 svg{
   position: absolute;
   top: 0;
@@ -349,6 +352,12 @@ svg{
 @keyframes javaanim{
   100% {
   stroke-dashoffset: 165.2;
+
+  }
+}
+@keyframes ractanim{
+  100% {
+  stroke-dashoffset: 175.2;
 
   }
 }
