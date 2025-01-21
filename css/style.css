@@ -260,6 +260,7 @@ header {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
+  margin: auto;
 }
 .skills-content{
   width: 160px;
@@ -647,6 +648,7 @@ project-box h2 {
   .logo {
     font-size: 1.1rem;
   }
+
   .home {
     min-height: 500px;
     padding-top: 6rem;
@@ -660,6 +662,10 @@ project-box h2 {
   }
   .home-text p {
     font-size: 0.825rem;
+  }
+  .skills-box{
+    padding-left: 20vw;
+    padding-right: 20vw;
   }
   .services-content,.skills-box {
     grid-template-columns: repeat(2, 1fr);
